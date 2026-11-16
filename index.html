@@ -5,152 +5,195 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy – Prank Verse</title>
 <meta name="description" content="How the Prank Verse mobile app handles your information.">
-<style>
-  :root {
-    color-scheme: light dark;
-    --bg: #faf9fc;
-    --surface: #ffffff;
-    --text: #221f2b;
-    --muted: #625c70;
-    --line: #e4e0ec;
-    --accent: #6b2fd6;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #12101a;
-      --surface: #1b1826;
-      --text: #ece9f3;
-      --muted: #a9a3b8;
-      --line: #322d42;
-      --accent: #c3a2ff;
-    }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  }
-  main { max-width: 720px; margin: 0 auto; padding: 56px 20px 72px; }
-  h1 { font-size: 2.1rem; line-height: 1.2; margin: 0 0 8px; letter-spacing: -0.01em; }
-  h2 { font-size: 1.25rem; line-height: 1.3; margin: 40px 0 10px; }
-  h3 { font-size: 1.02rem; margin: 24px 0 4px; }
-  p, ul { margin: 0 0 14px; }
-  ul { padding-left: 22px; }
-  li { margin-bottom: 6px; }
-  a { color: var(--accent); overflow-wrap: anywhere; }
-  .meta { color: var(--muted); margin-bottom: 28px; }
-  .summary {
-    background: var(--surface);
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    padding: 18px 20px 6px;
-  }
-  .summary h2 { margin-top: 0; }
-  .table-wrap { overflow-x: auto; }
-  table { width: 100%; border-collapse: collapse; font-size: 0.94rem; }
-  th, td { text-align: left; vertical-align: top; padding: 10px 12px 10px 0; border-bottom: 1px solid var(--line); }
-  th { font-weight: 600; }
-  footer { margin-top: 48px; color: var(--muted); font-size: 0.9rem; }
-</style>
+<link rel="icon" href="assets/icon.png">
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-<main>
-  <h1>Privacy Policy</h1>
-  <p class="meta">Prank Verse &middot; Effective November 10, 2026</p>
-
-  <p>Prank Verse (“the app”, “we”) is a mobile entertainment app with funny videos, simulated phone calls, face filters and screen pranks. This policy explains what information the app handles, why, and the choices you have.</p>
-
-  <section class="summary">
-    <h2>The short version</h2>
-    <ul>
-      <li>There is no account or sign-in. We do not ask for your name, email or phone number.</li>
-      <li>Your camera image stays on your device. It is never saved, uploaded or shared.</li>
-      <li>The app shows ads and uses analytics and crash reporting from Google, which collect device-level data described below.</li>
-      <li>We do not sell your personal information.</li>
-    </ul>
-  </section>
-
-  <h2>1. Camera and face data</h2>
-  <p>The Prank Face feature asks for permission to use your camera. Camera frames are analysed in real time, on your device, using Google ML Kit on-device face detection. This finds the position of facial features, such as eyes and mouth, so that filters line up with your face.</p>
-  <ul>
-    <li>Camera images and face positions are used only while the filter is on screen.</li>
-    <li>They are not saved to your device, not sent to us or to anyone else, and not used to identify you.</li>
-    <li>The app does not perform facial recognition.</li>
-  </ul>
-  <p>ML Kit may send Google basic technical metrics about how the component performs. These metrics do not include camera images. You can refuse or withdraw camera permission at any time in your device settings; the rest of the app keeps working.</p>
-
-  <h2>2. Information collected automatically</h2>
-  <div class="table-wrap">
-    <table>
-      <thead><tr><th>Service</th><th>Information</th><th>Purpose</th></tr></thead>
-      <tbody>
-        <tr>
-          <td>Google AdMob</td>
-          <td>Advertising ID, IP address, device and app information, ad views and interactions</td>
-          <td>Showing, measuring and limiting ads; preventing fraud</td>
-        </tr>
-        <tr>
-          <td>Firebase Analytics (Google)</td>
-          <td>App instance ID, advertising ID, app usage events, device model, operating system, approximate location derived from IP address</td>
-          <td>Understanding how the app is used and improving it</td>
-        </tr>
-        <tr>
-          <td>Firebase Crashlytics (Google)</td>
-          <td>Crash traces, device state and model, operating system, installation identifier</td>
-          <td>Finding and fixing crashes</td>
-        </tr>
-        <tr>
-          <td>Cloudflare (video delivery)</td>
-          <td>IP address and request details, such as the video requested and a short-lived access token</td>
-          <td>Delivering videos securely and preventing abuse</td>
-        </tr>
-      </tbody>
-    </table>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="./"><img src="assets/icon.png" alt=""><span>Prank Verse</span></a>
+    <nav class="tabs" aria-label="Legal pages">
+      <a href="./" aria-current="page">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+    </nav>
   </div>
+</header>
 
-  <h2>3. What the app does not access</h2>
-  <p>The app does not access your contacts, call log, messages, photos, files, microphone or precise location. Fake calls are simulated inside the app: no real call is placed, and the phone's calling features are not used.</p>
+<div class="hero">
+  <div class="hero-inner">
+    <div>
+      <span class="eyebrow">Legal</span>
+      <h1>Privacy Policy</h1>
+      <p>What the Prank Verse app collects, why it does, and the choices you have. No account, no sign-in, and your camera never leaves your phone.</p>
+      <p class="dates">Effective November 16, 2026</p>
+    </div>
+    <img class="ghost" src="assets/ghost.webp" alt="" width="150" height="153">
+  </div>
+</div>
 
-  <h2>4. Information stored on your device</h2>
-  <p>To reduce loading and data use, videos you watch are temporarily kept in the app's cache, up to about 400 MB. Older videos are removed automatically. Clearing the app's storage or uninstalling the app deletes this cache.</p>
+<div class="layout">
+  <aside class="toc">
+    <h2>On this page</h2>
+    <ol>
+      <li><a href="#glance">At a glance</a></li>
+      <li><a href="#camera">Camera and face data</a></li>
+      <li><a href="#automatic">Collected automatically</a></li>
+      <li><a href="#not-accessed">What we never access</a></li>
+      <li><a href="#device">Stored on your device</a></li>
+      <li><a href="#sharing">Sharing</a></li>
+      <li><a href="#choices">Your choices</a></li>
+      <li><a href="#retention">Data retention</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#children">Children</a></li>
+      <li><a href="#changes">Changes</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </aside>
 
-  <h2>5. Sharing</h2>
-  <p>Information is shared only with the service providers listed above so that they can provide their services. We do not sell personal information. We may disclose information if required by law. These providers process data under their own policies:</p>
-  <ul>
-    <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
-    <li><a href="https://policies.google.com/technologies/partner-sites">How Google uses information from apps that use its services</a></li>
-    <li><a href="https://firebase.google.com/support/privacy">Firebase privacy and security</a></li>
-    <li><a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Privacy Policy</a></li>
-  </ul>
-  <p>These providers may process information in countries other than your own.</p>
+  <main class="content">
+    <section id="glance">
+      <h2><span class="num">01</span>At a glance</h2>
+      <p class="lead">Prank Verse (“the app”, “we”) is an entertainment app with funny videos, simulated video calls, face filters and screen pranks.</p>
+      <div class="glance">
+        <div class="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/><path d="M3 3l18 18"/></svg>
+          <div><strong>No account</strong><span>We never ask for your name, email or phone number.</span></div>
+        </div>
+        <div class="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+          <div><strong>Camera stays on device</strong><span>Never recorded, saved, uploaded or shared.</span></div>
+        </div>
+        <div class="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M7 21h10"/><path d="M8 9h8M8 13h5"/></svg>
+          <div><strong>Ads and analytics</strong><span>Google and its ad partners collect device-level data, explained below.</span></div>
+        </div>
+        <div class="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <div><strong>Never sold</strong><span>We do not sell your personal information.</span></div>
+        </div>
+      </div>
+    </section>
 
-  <h2>6. Your choices</h2>
-  <ul>
-    <li><strong>Ad consent:</strong> in the European Economic Area, the United Kingdom and other regions where it is required, the app asks for your choice before loading ads, using Google's consent form. You can change your choice at any time with the privacy options button at the top of the home screen.</li>
-    <li><strong>Personalized ads:</strong> on Android, you can reset or delete your advertising ID in your device's Google or Privacy settings. On iOS, you can control tracking under Settings &gt; Privacy &amp; Security &gt; Tracking.</li>
-    <li><strong>Camera:</strong> turn the permission off in your device settings.</li>
-    <li><strong>Stop all collection:</strong> uninstall the app.</li>
-  </ul>
-  <p>Depending on where you live, you may have rights to access, correct, delete or object to the processing of your personal information. Because the app has no accounts, we generally cannot link data to you by name. Contact us and we will help as far as we can. You may also use the tools Google provides for your Google account and advertising settings.</p>
+    <section id="camera">
+      <h2><span class="num">02</span>Camera and face data</h2>
+      <p>Two features ask for permission to use your front camera:</p>
+      <ul>
+        <li><strong>Prank Face:</strong> camera frames are analysed in real time, on your device, with Google ML Kit on-device face detection. It finds where your eyes, nose and mouth are so the filter lines up with your face.</li>
+        <li><strong>Prank Call:</strong> during a simulated video call, your own camera picture is shown in the corner of the screen, like in a real video call.</li>
+      </ul>
+      <div class="callout">
+        <p>Camera images and face positions exist only while the screen is open. They are not recorded, not saved, not sent to us or anyone else, and never used to identify you. The app does not perform facial recognition.</p>
+      </div>
+      <p>ML Kit may send Google basic technical metrics about how the component performs; these never include camera images. You can refuse or withdraw camera permission at any time in your device settings, and the rest of the app keeps working.</p>
+    </section>
 
-  <h2>7. Data retention</h2>
-  <p>Camera images are not retained. The video cache stays on your device as described above. Data collected by Google and Cloudflare is kept according to their own retention policies and settings.</p>
+    <section id="automatic">
+      <h2><span class="num">03</span>Information collected automatically</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Service</th><th>Information</th><th>Purpose</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Service">Google AdMob</td>
+              <td data-label="Information">Advertising ID, IP address, device and app information, ad views and interactions</td>
+              <td data-label="Purpose">Showing, measuring and limiting ads; preventing fraud</td>
+            </tr>
+            <tr>
+              <td data-label="Service">Ad partners</td>
+              <td data-label="Information">AppLovin, Mintegral, Unity Ads and Liftoff Monetize may receive the advertising ID, IP address, device information and ad interactions when they serve an ad through AdMob</td>
+              <td data-label="Purpose">Serving and measuring ads</td>
+            </tr>
+            <tr>
+              <td data-label="Service">Firebase Analytics</td>
+              <td data-label="Information">App instance ID, advertising ID, usage events, device model, operating system, approximate location derived from IP address</td>
+              <td data-label="Purpose">Understanding how the app is used and improving it</td>
+            </tr>
+            <tr>
+              <td data-label="Service">Firebase Crashlytics</td>
+              <td data-label="Information">Crash traces, device state and model, operating system, installation identifier</td>
+              <td data-label="Purpose">Finding and fixing crashes</td>
+            </tr>
+            <tr>
+              <td data-label="Service">Cloudflare</td>
+              <td data-label="Information">IP address and request details, such as the video requested and a short-lived access token</td>
+              <td data-label="Purpose">Delivering videos securely and preventing abuse</td>
+            </tr>
+            <tr>
+              <td data-label="Service">Google Play</td>
+              <td data-label="Information">App version and update status</td>
+              <td data-label="Purpose">Offering in-app updates</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-  <h2>8. Security</h2>
-  <p>Video requests use encrypted HTTPS connections with short-lived access tokens. No method of transmission or storage is completely secure, but we work to protect the information the app handles.</p>
+    <section id="not-accessed">
+      <h2><span class="num">04</span>What the app never accesses</h2>
+      <p>The app does not access your contacts, call log, messages, photos, files, microphone or precise location. Calls are simulated inside the app: no real call is placed, the phone's calling features are not used, and the microphone button in a call is only part of the pretend screen.</p>
+    </section>
 
-  <h2>9. Children</h2>
-  <p>The app is not directed to children under 13, and we do not knowingly collect personal information from them. If you believe a child has provided personal information through the app, contact us so that we can take appropriate action.</p>
+    <section id="device">
+      <h2><span class="num">05</span>Information stored on your device</h2>
+      <p>To load faster and use less data, videos you watch are kept for a while in the app's cache, up to about 400 MB. Older videos are removed automatically. Clearing the app's storage or uninstalling the app deletes this cache.</p>
+    </section>
 
-  <h2>10. Changes to this policy</h2>
-  <p>We may update this policy from time to time. The new version will be posted on this page with a new effective date.</p>
+    <section id="sharing">
+      <h2><span class="num">06</span>Sharing</h2>
+      <p>Information is shared only with the providers listed above so that they can provide their services. We do not sell personal information. We may disclose information if the law requires it. These providers process data under their own policies:</p>
+      <ul>
+        <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">how Google uses data from partner apps</a></li>
+        <li><a href="https://firebase.google.com/support/privacy">Firebase privacy and security</a></li>
+        <li><a href="https://www.applovin.com/privacy/">AppLovin Privacy Policy</a></li>
+        <li><a href="https://www.mintegral.com/en/privacy">Mintegral Privacy Policy</a></li>
+        <li><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Privacy Policy</a></li>
+        <li><a href="https://liftoff.io/privacy-policy/">Liftoff Privacy Policy</a></li>
+        <li><a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Privacy Policy</a></li>
+      </ul>
+      <p>These providers may process information in countries other than your own.</p>
+    </section>
 
-  <h2>11. Contact</h2>
-  <p>Questions or requests about this policy: <a href="mailto:doquy07072002@gmail.com">doquy07072002@gmail.com</a></p>
+    <section id="choices">
+      <h2><span class="num">07</span>Your choices</h2>
+      <ul>
+        <li><strong>Ad consent:</strong> in the European Economic Area, the United Kingdom, Switzerland and other places where it is required, the app asks for your choice with Google's consent form before loading ads. You can change it at any time with the privacy options button at the top of the home screen.</li>
+        <li><strong>Personalized ads:</strong> on Android, reset or delete your advertising ID in your device's Google or Privacy settings. On iOS, use Settings &gt; Privacy &amp; Security &gt; Tracking.</li>
+        <li><strong>Camera:</strong> turn the permission off in your device settings.</li>
+        <li><strong>Stop all collection:</strong> uninstall the app.</li>
+      </ul>
+      <p>Depending on where you live, you may have the right to access, correct, delete or object to the processing of your personal information. Because the app has no accounts, we usually cannot link data to you by name, but contact us and we will help as far as we can.</p>
+    </section>
 
-  <footer>&copy; 2026 Prank Verse</footer>
-</main>
+    <section id="retention">
+      <h2><span class="num">08</span>Data retention</h2>
+      <p>Camera images are not kept at all. The video cache stays on your device as described above. Data collected by Google, its ad partners and Cloudflare is kept according to their own retention policies.</p>
+    </section>
+
+    <section id="security">
+      <h2><span class="num">09</span>Security</h2>
+      <p>Videos are delivered over encrypted HTTPS connections with short-lived access tokens. No method of transmission or storage is completely secure, but we work to protect the information the app handles.</p>
+    </section>
+
+    <section id="children">
+      <h2><span class="num">10</span>Children</h2>
+      <p>The app is not directed to children under 13, and we do not knowingly collect personal information from them. If you believe a child has provided personal information through the app, contact us and we will take appropriate action.</p>
+    </section>
+
+    <section id="changes">
+      <h2><span class="num">11</span>Changes to this policy</h2>
+      <p>We may update this policy from time to time. The new version will be posted on this page with a new effective date.</p>
+    </section>
+
+    <section id="contact">
+      <h2><span class="num">12</span>Contact</h2>
+      <div class="contact">
+        <p>Questions or requests about this policy?</p>
+        <a class="button" href="mailto:doquy07072002@gmail.com">doquy07072002@gmail.com</a>
+      </div>
+    </section>
+  </main>
+</div>
+
+<footer>&copy; 2026 Prank Verse &middot; <a href="./">Privacy Policy</a> &middot; <a href="terms.html">Terms of Use</a></footer>
 </body>
 </html>
