@@ -96,6 +96,28 @@ a:hover { color: var(--accent-2); }
 .hero h1 { font-size: clamp(2rem, 5vw, 3.1rem); line-height: 1.1; margin: 0 0 12px; letter-spacing: -0.02em; }
 .hero p { margin: 0; max-width: 560px; color: rgba(255, 255, 255, 0.86); font-size: 1.05rem; }
 .hero .dates { margin-top: 18px; font-size: 0.9rem; color: rgba(255, 255, 255, 0.72); }
+/* ---- download: Play badge + QR ------------------------------------------ */
+.get-app { display: flex; align-items: center; flex-wrap: wrap; gap: 14px 18px; margin-top: 24px; }
+.play-badge {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: #000; color: #fff; text-decoration: none;
+  border: 1px solid #a6a6a6; border-radius: 10px; padding: 8px 18px 8px 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.play-badge:hover { color: #fff; transform: translateY(-1px); box-shadow: 0 12px 26px rgba(0, 0, 0, 0.32); }
+.play-badge:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+.play-badge svg { width: 26px; height: 28px; flex: none; }
+.play-badge span { display: flex; flex-direction: column; font-size: 1.35rem; font-weight: 600; line-height: 1.05; letter-spacing: -0.01em; }
+.play-badge small { font-size: 0.64rem; font-weight: 600; letter-spacing: 0.06em; margin-bottom: 2px; }
+.qr {
+  display: flex; align-items: center; gap: 12px; margin: 0;
+  background: rgba(255, 255, 255, 0.14); border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 14px; padding: 8px 14px 8px 8px;
+}
+.qr img { display: block; width: 88px; height: 88px; border-radius: 8px; background: #fff; }
+.qr figcaption { max-width: 120px; font-size: 0.85rem; line-height: 1.35; color: rgba(255, 255, 255, 0.86); }
+@media (prefers-reduced-motion: reduce) { .play-badge { transition: none; } }
+
 .ghost { width: 150px; height: auto; filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.35)); animation: bob 4s ease-in-out infinite; }
 @keyframes bob { 0%, 100% { transform: translateY(0) rotate(-2deg); } 50% { transform: translateY(-10px) rotate(2deg); } }
 @media (prefers-reduced-motion: reduce) { .ghost { animation: none; } html { scroll-behavior: auto; } }
